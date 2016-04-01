@@ -1,0 +1,187 @@
+<style>
+
+     * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+            background-color: #FFFFFF;
+
+
+          }
+
+      input#m { background: #E0E0E0; padding: 10px; position: fixed; bottom: 0;}
+      input#m { border: 0; width: 100%; right: 0; }
+      button {width: 100 ; background: rgb(255, 255, 255); border: 0; padding: 10px; position: fixed; bottom: 0; right:0%;}
+      #messages { list-style-type: none; margin: 10; padding: 10; }
+      #messages li { padding: 5px 5px; margin: 10; }
+      #messages li { background: #eee;} 
+
+      p {
+          margin-top: 5px;
+          }
+
+      h1{   
+          font-family: Century Gothic, sans-serif;
+          margin-top: 2px;
+          color:rgba(255,255,255,.9);
+          text-shadow:rgba(0,0,0,.2) 2px 6px 5px,rgba(255,255,255,.4) 0 -4px 30px;
+
+
+          }   
+      h2{   
+          font-family: 'Source Sans Pro', sans-serif;
+          font-weight: 300; 
+          margin-top: 2px;
+          color:rgba(255,255,255,.9);
+          
+
+          }       
+      
+/*
+      #drawing {
+          background:#FFF          
+          
+
+        }*/
+
+
+      .window{
+
+      height: 500px;
+      position: absolute;
+      width: 100%;
+      /*background-color: #eee;
+      opacity: 0.6;*/
+}
+
+.block {
+    display: block;
+}
+
+#content {
+
+   position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+
+
+
+}
+      
+#chatDiv {
+    
+    border-radius: 3px;
+    max-height: 50%;
+    min-height: 300px;
+    overflow: auto;
+    position: relative;
+    width: 100%;
+    background-color: 000;
+    opacity:0.6;
+    margin-top:20;
+}
+
+#chatDiv .container {
+    bottom: 100%;
+    display: block;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 10;
+}
+
+
+
+      #chat{
+
+      height: 100%;
+      /*verflow: scroll;*/
+      overflow-x: hidden;
+      overflow-y: scroll;
+      position: relative;
+      /*right:0;*/
+      /*top: 250;*/
+      /*bottom: 15;*/
+      /*width: 650;*/
+      /*border-left: 1px solid #ff0000;*/
+
+
+    }
+
+
+       
+    /* VIDEOPART*/
+
+      .button {
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+    }
+      input#callto-id{
+      height: 30px;
+      /*position:absolute;*/
+      /*top:14%;*/
+      text-align: center;
+    }
+      .green {
+      background: rgb(29, 183, 13); /* this is a green */
+
+    }
+      .red {
+      background: rgb(202, 60, 60); /* this is a maroon */
+    }
+  
+      #my-video, #their-video{
+      top: 10px;
+      bottom: 10px;
+      width: 45%;
+      background-color: #000;
+      padding:20px;
+
+      }
+
+    
+  
+      #video-container {
+      background-color: #fff;
+      /*opacity:0.6;  */
+      padding: 10px;
+      text-align: center;
+    }
+
+      #call-interface {
+
+      
+      top:10%;
+      text-align: center;
+    }
+  
+      #my-id {
+      font-weight: bold;
+    }
+      #buttons {
+      text-align: center;
+    }
+      #end-call-interface {
+      /*position:absolute;*/
+      top:10%;
+      text-align: center;
+      display:none;
+      
+    }
+
+    #toggle{
+      text-align: center;
+      padding: 10px;
+  }
+
+  button#stopVideo{
+    padding: 10px;
+
+  }
+    
+</style>
+    
